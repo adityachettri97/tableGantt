@@ -1,0 +1,150 @@
+{
+  "dataRoles": [
+    {
+      "displayName": "Project Priority",
+      "name": "projectPriority",
+      "kind": "Grouping"
+    },
+    {
+      "displayName": "Project Name",
+      "name": "projectName",
+      "kind": "Grouping"
+    },
+    {
+      "displayName": "Project Risk",
+      "name": "projectRisk",
+      "kind": "Grouping"
+    },
+    {
+      "displayName": "Project Start Date",
+      "name": "projectStartDate",
+      "kind": "Measure"
+    },
+    {
+      "displayName": "Project End Date",
+      "name": "projectEndDate",
+      "kind": "Measure"
+    },
+    {
+      "displayName": "Measure Data",
+      "name": "measureData",
+      "kind": "Measure"
+    },
+    {
+      "displayName": "Milestone Name",
+      "name": "milestoneName",
+      "kind": "Grouping"
+    },
+    {
+      "displayName": "Milestone Priority",
+      "name": "milestonePriority",
+      "kind": "Grouping"
+    },
+    {
+      "displayName": "Milestone Date",
+      "name": "milestoneDate",
+      "kind": "Measure"
+    }
+  ],
+  "dataViewMappings": [
+    {
+      "categorical": {
+        "categories": {
+          "select": [
+            {
+              "for": {
+                "in": "projectPriority"
+              }
+            },
+            {
+              "for": {
+                "in": "projectName"
+              }
+            },
+            {
+              "for": {
+                "in": "projectRisk"
+              }
+            },
+            {
+              "for": {
+                "in": "milestoneName"
+              }
+            },
+            {
+              "for": {
+                "in": "milestonePriority"
+              }
+            }
+          ]
+        },
+        "values": {
+          "select": [
+            {
+              "bind": {
+                "to": "measureData"
+              }
+            },
+            {
+              "bind": {
+                "to": "projectStartDate"
+              }
+            },
+            {
+              "bind": {
+                "to": "projectEndDate"
+              }
+            },
+            {
+              "bind": {
+                "to": "milestoneDate"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "objects": {
+    "dataPoint": {
+      "properties": {
+        "defaultColor": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "showAllDataPoints": {
+          "type": {
+            "bool": true
+          }
+        },
+        "fill": {
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
+        },
+        "fillRule": {
+          "type": {
+            "fill": {}
+          }
+        },
+        "fontSize": {
+          "type": {
+            "formatting": {
+              "fontSize": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "privileges": []
+}

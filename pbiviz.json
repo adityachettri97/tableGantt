@@ -1,0 +1,20 @@
+{
+  "visual": {
+    "name": "LearningtableGantt",
+    "displayName": "TableGantt",
+    "guid": "learningtableGantt3BE60C2254D74A57A46A2956C42B73B8",
+    "visualClassName": "Visual",
+    "version": "1.0.0",
+    "description": "",
+    "supportUrl": "",
+    "gitHubUrl": ""
+  },
+  "apiVersion": "5.1.0",
+  "author": { "name": "", "email": "" },
+  "assets": { "icon": "assets/icon.png" },
+  "externalJS": null,
+  "style": "style/visual.less",
+  "capabilities": "capabilities.json",
+  "dependencies": null,
+  "stringResources": []
+}

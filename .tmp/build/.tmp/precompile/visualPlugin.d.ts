@@ -1,0 +1,4 @@
+import powerbiVisualsApi from "powerbi-visuals-api";
+import IVisualPlugin = powerbiVisualsApi.visuals.plugins.IVisualPlugin;
+declare var learningtableGantt3BE60C2254D74A57A46A2956C42B73B8_DEBUG: IVisualPlugin;
+export default learningtableGantt3BE60C2254D74A57A46A2956C42B73B8_DEBUG;
